@@ -3,6 +3,10 @@ from metrics import api_counter , prediction_counter
 import joblib
 from prometheus_client import generate_latest
 from fastapi.responses import Response
+from pydantic import BaseModel
+
+class PredictionInput(BaseModel):
+    features: list[list[float]]
 
 app = FastAPI()
 

@@ -13,4 +13,4 @@ model.fit(X, y)
 # Save model
 joblib.dump(model, "models/model.pkl")
 
-print("Model trained and saved")
+print("Model traine and saved")

@@ -6,7 +6,7 @@ prediction_counter = Counter(
 )
 
 api_counter = Counter(
-    'total_request',
-    'Total request'
+    'total_calls',
+    'Total Calls'
 )
 

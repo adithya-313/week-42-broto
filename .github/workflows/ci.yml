@@ -24,6 +24,6 @@ jobs:
 
       - name: bbuild image
         run: |
-          docker build -t ml-api
+          docker build -t ml-api .
       
     

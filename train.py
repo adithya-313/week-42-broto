@@ -1,16 +1,18 @@
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 import joblib
-import os
 
-# Load dataset
-X, y = load_iris(return_X_y=True)
 
-# Train model
+data = load_iris()
+
+X = data.data
+y =  data.target
+
 model = RandomForestClassifier()
-model.fit(X, y)
 
-# Save model
-joblib.dump(model, "models/model.pkl")
+model.fit(X ,y)
 
-print("Model traine and saved")
+joblib.dump(model , 'models/model.joblib')
+
+print("model loaded sucessfull")
+

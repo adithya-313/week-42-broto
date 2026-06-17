@@ -2,14 +2,16 @@ from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 
+
 data = load_iris()
+
 X = data.data
 y = data.target
 
 model = RandomForestClassifier()
 
-model.fit(X ,y)
+model.fit(X , y)
 
-joblib.dump(model , 'models/model.joblib')
+joblib.dump(model , "models/model.joblib")
 
-print("model loaded")
+print("model trained and loaded")

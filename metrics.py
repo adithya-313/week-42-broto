@@ -1,12 +1,12 @@
 from prometheus_client import Counter
 
 prediction_counter = Counter(
-    'total_predictions',
+    'total_prediction',
     'Total Predictions'
 )
 
 api_counter = Counter(
-    'total_calls',
-    'Total Calls'
+    'total_api_calls',
+    'Total Api Calls'
 )
 

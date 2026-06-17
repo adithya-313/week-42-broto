@@ -5,10 +5,7 @@ scrape_configs:
   - job_name: 'ml-api'
 
     static_configs:
-    - targets:
+      - targets:
         - 'ml-api:8000'
 
 
-        
-
-    
